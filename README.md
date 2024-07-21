@@ -1,3 +1,3 @@
-# 🔥 01_JavaScript 🧩
+# 🔥 03_JavaScript 🧩
 Some basic conceptual files that I created while learning JavaScript. <br>This repository is just for storing these files and tracking my learning progress...
 
