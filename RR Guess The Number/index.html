@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Counter App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Guess the number</h1>
+
+      <div class="input-box">
+        <p>Enter a guess between 0 to 100</p>
+        <form action="">
+          <input
+            type="number"
+            class="input-field"
+            placeholder="Enter a number"
+            min="0"
+            max="100"
+            autofocus
+            required
+          />
+
+          <div>
+            <button class="submit">Submit</button>
+            <button class="start-game" disabled>Start Game</button>
+          </div>
+        </form>
+        <br>
+        <p class="result"></p>
+        <br>
+        <p class="attempts"></p>
+      </div>
+    </div>
+  </body>
+</html>
