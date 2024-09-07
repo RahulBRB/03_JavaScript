@@ -1,0 +1,29 @@
+body{
+    margin:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    font-family: sans-serif;
+    color: white;
+    background-color: black;
+} 
+
+h1{
+    font-size: 4rem;
+}
+
+span{
+    color: rgb(2, 173, 235);
+    display: inline-flex;
+    align-items: center;
+}
+
+span::after{
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 55px;
+    background-color: rgb(2, 173, 235);
+    margin-left: 4px;
+}
