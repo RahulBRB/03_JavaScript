@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    padding: 25px;
+    background-color: #07004D;
+    color: black;
+}
+
+/* Container */
+.container {
+    max-width: 500px;
+    width: 100%;
+    padding: 25px;
+    text-align: center;
+    background-color: white;
+    border-radius: 7px;
+    position: relative;
+    box-shadow: 
+        0 0 10px rgba(0, 0, 0, 0.1),
+        0 0 20px rgba(0, 0, 0, 0.1),
+        0 0 40px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    padding: 30px 0;
+}
+
+.container h1 > span {
+    color: #005bf7;
+    padding: 10px 0;
+}
+
+/* Content */
+.content {
+    text-align: left;
+    width: 95%;
+    margin: 20px 0 10px;
+    padding-left: 20px;
+}
+
+.content .password-field {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Password input field */
+#password {
+    width: 95%;
+    height: 50px;
+    padding: 0 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.229);
+    outline: none;
+    transition: border 0.3s ease; /* Smooth transition for border */
+}
+
+#password:focus {
+    border: 2px solid rgba(0, 0, 0, 1);
+}
+
+/* Toggle Password Icon */
+#togglePassword {
+    position: absolute;
+    right: 48px;
+    top: 140px;
+    cursor: pointer;
+}
+
+/* Requirement list */
+.requirement-lists {
+    margin-top: 20px;
+}
+
+.requirement-lists li {
+    list-style: none;
+    padding-top: 5px;
+    font-size: 1.2rem;
+}
+
+/* Icon and text changes for valid requirements */
+.requirement-lists li.is-valid i {
+    color: #2D82B7;
+}
+
+.requirement-lists li.is-valid span {
+    opacity: 0.5;
+}
+
+.requirement-lists li span {
+    margin-left: 12px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    #password {
+        width: 100%; 
+        font-size: 18px;
+    }
+
+    #togglePassword {
+        right:35px;
+        top: 135px; 
+    }
+
+    .requirement-lists li {
+        font-size: 1rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    #togglePassword {
+        opacity: 0;
+    }
+
+    .container {
+        padding: 15px;
+        max-width: 100%; 
+
+    }
+    .content {
+        padding-left: 10px;
+    }
+
+    #togglePassword {
+        top: 100px; 
+    }
+    #password {
+        font-size: 16px; 
+    }
+}
